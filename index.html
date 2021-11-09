@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./style.css">
+        <title>Soal </title>
+    </head>
+    <body>
+        <header>
+            <h1>Keyboard</h1>
+        </header>
+        <div class="container">
+            <h1 id="keyboardStatus"></h1>
+            <h3 id="hasil-output"></h3>
+        </div>
+        <div  class="container">
+            <h1>Opsi</h1>
+            <div class="row">
+                <div class="col-50">
+                    <button type="button" onclick="balikHorizontal()">Balik Horizontal</button>
+                </div>
+                <div class="col-50">
+                    <button type="button" onclick="balikVertical()">Balik Vertical</button>
+                </div>
+            </div>
+            <hr/>
+            <div class="row">
+                <div class="col-100">
+                    <form name="formGeser">
+                        <input type="number" id="nomor" name="nomor" placeholder="Masukkan nilai geser. Nilai positif n kekanan. Nilai negatif n kekiri.">
+                        <button type="button" id="btnGeser">Geser</button>
+                    </form>
+                </div>
+            </div> 
+            <hr/>
+            <div class="row">
+                <div class="col-100">
+                    <button type="button" onclick="reset()">Reset</button>
+                </div>
+            </div>           
+        </div>
+            
+        <div  class="container"> 
+            <h1>Menggunakan File Path</h1>
+            <hr/>
+            <textarea id='tbMain' placeholder="Ketikkan path atau masukkan file"></textarea>
+            <button type="button" id='btnOpen'><i class="far fa-file"></i> Open</button>
+            <hr/>
+            <p>Anda bisa mengetikkan path V untuk balik vertikal, H untuk balik horizontal, angka diatas 0 untuk geser n kekanan, angka dibawah 0 untuk geser n kekiri. Contoh : H,V,5</p>
+        </div>
+        <script type="text/javascript" src="./app.js"></script>
+        <footer><h3>By Rafi Hanif R</h3></footer>
+        <br/>
+    </body>
+</html>
+
